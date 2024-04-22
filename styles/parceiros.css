@@ -1,0 +1,131 @@
+/* geral sobre */
+.partnerContent {
+  margin-top: 60px;
+}
+
+/* sobre titulo*/
+.partnerContent h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* sobre subtitutlo */
+.partnerContent h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+
+/* geral dos parceiros */
+.partnerGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Div/ card dos parceiros */
+.partnerDiv {
+  margin-bottom: 50px;
+  background-color: white;
+  width: 60%;
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+}
+
+/* imagens de parceiros */
+.partnerDiv img {
+  width: 170px;
+  padding: 20px;
+}
+
+/* responsividade */
+
+@media (min-width: 552px) {
+  .partnerDiv {
+    margin-bottom: 50px;
+    width: 50%;
+    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+  }
+
+  .partnerContent h3 {
+    padding: 0px 80px;
+  }
+}
+
+@media (min-width: 738px) {
+  .partnerGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .partnerDiv img {
+    width: 60%; /* A imagem ocupa toda a largura do card */
+    height: 60%; /* A imagem ocupa toda a altura do card */
+    object-fit: cover;
+  }
+
+  .partnerContent h3 {
+    font-size: 19.5px;
+    padding: 0px 100px;
+  }
+}
+
+@media (min-width: 795px) {
+  .partnerGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .partnerDiv {
+    margin: 20px 40px;
+    background-color: white;
+    width: 40%;
+    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+  }
+
+  .partnerContent h2 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 27px;
+    font-size: 35px;
+  }
+
+  .partnerContent h3 {
+    font-size: 20px;
+    padding: 0px 100px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .partnerGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .partnerDiv {
+    margin: 20px 80px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+  }
+
+  .partnerContent h2 {
+    font-size: 40px;
+  }
+}

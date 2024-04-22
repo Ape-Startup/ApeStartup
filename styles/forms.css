@@ -1,0 +1,224 @@
+/* sessão principal 3: formulário */
+.mainContaner3 {
+  background-color: var(--primary-color);
+  padding: 0 50px;
+}
+
+/* geral do contato */
+.contactContent {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* título do contato */
+.contactContent h2 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+/* subtitulo do contato */
+.contactContent h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+
+/* Div do formulário */
+.formDivGroup {
+  display: flex;
+  justify-content: center;
+}
+
+/* Formulário */
+.form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  padding: 20px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  box-shadow: 0px 13px 19px 0px #00000012;
+  margin-bottom: 40px;
+}
+
+/* icone de seta para voltar ao início  */
+.fa-arrow-up {
+  position: absolute;
+  right: -30px;
+  top: 160px;
+  color: var(--secundary-color);
+  font-size: 18px;
+}
+
+/* Divs dos componentes do formulário  */
+.formDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: start;
+}
+
+/* inputs */
+
+.form input {
+  width: 100%;
+  border: none;
+  background-color: #dfd6eb;
+  height: 40px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 4px 0px #e3e3e3;
+}
+
+/* textAreas */
+.form textarea {
+  border: none;
+  background-color: #dfd6eb;
+  height: 100px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 4px 0px #e3e3e3;
+}
+
+/* Áreas de focus para quando o usuário digitar */
+input:focus,
+textarea:focus {
+  border: 2px solid var(--secundary-color);
+  outline: none; /* Remove a borda de foco padrão */
+}
+
+/* Div do botão para contato no formulário */
+.btnFormContact {
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Botão para contato no formulário */
+.btnContact {
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: var(--primary-color);
+  background-color: var(--btn-color);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Div contato rápido */
+
+.contactExtraDiv {
+  width: 100%;
+}
+
+/* contato rápido */
+
+.contactExtraDiv .ContactExtraBtn {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 15px 21px 0px #00000012;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+/* icone do whatsApp */
+.fa-whatsapp {
+  font-size: 20px;
+  color: var(--secundary-color);
+}
+
+/* responsividade */
+
+@media (min-width: 500px) {
+  .form {
+    width: 80%;
+  }
+
+  .contactExtraDiv .ContactExtraBtn {
+    width: 80%;
+  }
+
+  .fa-arrow-up {
+    right: -50px;
+  }
+}
+
+@media (min-width: 630px) {
+  .form {
+    width: 60%;
+  }
+
+  .contactExtraDiv .ContactExtraBtn {
+    width: 60%;
+  }
+
+  .fa-arrow-up {
+    font-size: 20px;
+    right: -70px;
+  }
+}
+
+@media (min-width: 800px) {
+  .form {
+    width: 50%;
+  }
+
+  .contactExtraDiv .ContactExtraBtn {
+    width: 50%;
+  }
+
+  .fa-arrow-up {
+    font-size: 20px;
+    right: -70px;
+  }
+
+  .contactContent h2 {
+    font-size: 35px;
+  }
+
+  .contactContent h3 {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 900px) {
+  .form {
+    width: 50%;
+  }
+
+  .contactExtraDiv .ContactExtraBtn {
+    width: 50%;
+  }
+
+  .fa-arrow-up {
+    font-size: 20px;
+    right: -100px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .form {
+    width: 400px;
+  }
+
+  .contactExtraDiv .ContactExtraBtn {
+    width: 400px;
+  }
+
+  .contactContent h2 {
+    font-size: 40px;
+  }
+}

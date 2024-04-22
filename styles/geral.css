@@ -1,0 +1,65 @@
+/* Estilizações gerais */
+:root {
+  --primary-color: #f9f9f9;
+  --secundary-color: #9f61ef;
+  --bg-home: #b39bd1;
+  --btn-color: #9f61ef;
+
+  --text: "Jost", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: var(--text);
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  -ms-overflow-style: none; /* Para IE e Edge */
+  scrollbar-width: none; /* Para Firefox */
+  overflow-y: scroll; /* Força a barra de rolagem sempre visível em dispositivos iOS */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Para Chrome, Safari e Opera */
+}
+
+/* Sessão referente aos tópicos : sobre, soluções e parceiros */
+.mainContaner {
+  padding: 0px 20px;
+}
+
+/* Da espaço entre a sessão clicavel e o topico */
+.aboutUs,
+.solutionContent,
+.partnerContent,
+.midiaContent,
+.squadContent,
+.contactContent {
+  padding-top: calc(
+    100px + 20px
+  ); /* 100px é a altura do cabeçalho e 20px é o espaço extra que você deseja */
+  margin-top: -105px; /* Compensação para manter o layout visualmente consistente */
+}
+
+@media (min-width: 500px) {
+  .mainContaner {
+    padding: 0px 40px;
+  }
+}
+
+@media (min-width: 980px) {
+  .mainContaner {
+    padding: 0px 80px;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}

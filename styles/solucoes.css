@@ -1,0 +1,155 @@
+/* geral sobre */
+.solutionContent {
+  margin-top: 60px;
+}
+
+/* sobre titulo*/
+.solutionContent h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* sobre subtitutlo */
+.solutionContent h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+
+/* div das soluções */
+.solutionDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* texto das soluções */
+.solutionDiv p {
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+/* imagem das soluções */
+.solutionDiv img {
+  width: 300px;
+}
+
+/* botao da solução*/
+.btnDiv {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 40px;
+}
+
+.btnDiv a {
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--primary-color);
+  background-color: var(--btn-color);
+  font-weight: 600;
+}
+
+/* responsividade */
+
+@media (min-width: 552px) {
+  .solutionDiv p {
+    margin-bottom: 30px;
+    font-size: 1.02rem;
+    padding: 0px 40px;
+  }
+
+  .btnDiv {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-left: 20px;
+    width: 40%;
+  }
+
+  .solutionDiv img {
+    width: 40%;
+  }
+}
+
+@media (min-width: 625px) {
+  .solutionContent h3 {
+    font-size: 20px;
+    padding: 0px 40px;
+  }
+}
+
+@media (min-width: 738px) {
+  .solutionDiv p {
+    font-size: 1.05rem;
+    padding: 0px 50px;
+  }
+
+  .solutionDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 766px) {
+  .solutionContent h3 {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 0px 150px;
+  }
+
+  .solutionDiv {
+    margin-bottom: 0px;
+  }
+
+  .solutionDiv p {
+    font-size: 1.05rem;
+    padding: 0px 40px;
+  }
+}
+
+@media (min-width: 787px) {
+  .solutionContent h2 {
+    font-size: 35px;
+  }
+
+  .solutionContent h3 {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 0px 200px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .solutionContent h2 {
+    font-size: 40px;
+  }
+
+  .solutionDiv p {
+    font-size: 1.12rem;
+    padding: 0px 40px;
+  }
+
+  .btnDiv a {
+    margin-left: 20px;
+    padding: 12px 30px;
+    font-size: 1.05rem;
+    border-radius: 20px;
+    color: var(--primary-color);
+    background-color: var(--btn-color);
+    font-weight: 600;
+  }
+}

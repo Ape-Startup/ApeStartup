@@ -1,0 +1,109 @@
+/* Sessão geral 2 : Equipe*/
+.mainContaner2 {
+  background-color: var(--btn-color);
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
+/* geral sobre */
+.squadContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* geral sobre titulo */
+.squadContent h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* geral Div contendo o time */
+.squadDiv {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Nome dos integrantes */
+.squadDiv h3 {
+  color: var(--primary-color);
+}
+
+/* texto informativo do integrante */
+.squadDiv p {
+  width: 150px;
+}
+
+/* imagem dos integrantes */
+.squadDiv .imgSquad {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* linkedin icon */
+.squadDiv .fa-linkedin {
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+/* responsividade */
+
+@media (min-width: 665px) {
+  .squadDiv {
+    gap: 50px;
+  }
+}
+
+@media (min-width: 764px) {
+  .squadDiv {
+    gap: 80px;
+  }
+}
+
+@media (min-width: 787px) {
+  .squadDiv {
+    gap: 100px;
+  }
+}
+
+@media (min-width: 940px) {
+  .squadDiv {
+    gap: 130px;
+  }
+}
+
+@media (min-width: 879px) {
+  /* sobre titulo*/
+  .squadContent h2 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 986px) {
+  .squadDiv {
+    gap: 160px;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* sobre titulo*/
+  .squadContent h2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1386px) {
+  .squadDiv {
+    gap: 160px;
+  }
+}

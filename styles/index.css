@@ -1,0 +1,141 @@
+/* Estitilização do topo da página */
+.header {
+  background-color: var(--bg-home);
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* decoração do topo da página */
+.decorationBg {
+  position: absolute;
+  width: 500px;
+  top: -100px;
+  left: -290px;
+}
+
+/* logo da página Ape */
+.logo {
+  position: absolute;
+  top: -10px;
+  left: -60px;
+  padding-left: 50px;
+  width: 200px;
+  padding-top: 10px;
+  z-index: 9999;
+}
+
+/* Estilização do titulo */
+.header .textHeader {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16rem;
+  width: 100%;
+  text-align: center;
+  color: var(--primary-color);
+  z-index: 2;
+}
+
+/* título do index */
+.titleHeader {
+  width: 300px;
+}
+
+/* subtitulo do index */
+.subtitleHeader {
+  margin-top: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+/* seta */
+.fa-arrow-down {
+  font-size: 30px;
+  color: var(#9f61ef);
+  margin-top: 8rem;
+  animation: moveUpDown 1s ease-in-out infinite alternate;
+}
+
+/* seta animação */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Posição inicial */
+  }
+  100% {
+    transform: translateY(-20px); /* Posição final (20px para cima) */
+  }
+}
+
+/* responsividade */
+
+@media (min-width: 500px) {
+  .decorationBg {
+    width: 500px;
+    top: -60px;
+    left: -260px;
+    z-index: 88888;
+  }
+
+  .logo {
+    top: -20px;
+    left: -65px;
+    padding-left: 50px;
+    width: 230px;
+    padding-top: 10px;
+    z-index: 100000;
+  }
+}
+
+@media (min-width: 640px) {
+  .decorationBg {
+    width: 600px;
+    top: -60px;
+    left: -320px;
+    z-index: 88888;
+  }
+
+  .textHeader {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16rem;
+    width: 100%;
+    text-align: center;
+    color: var(--primary-color);
+    z-index: 2;
+  }
+
+  .titleHeader {
+    width: 400px;
+    font-size: 40px;
+  }
+
+  /* subtitulo do index */
+  .subtitleHeader {
+    font-size: 28px;
+  }
+
+  /* seta */
+  .fa-arrow-down {
+    font-size: 40px;
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .titleHeader {
+    width: 50%;
+  }
+
+  .decorationBg {
+    width: 800px;
+    top: -60px;
+    left: -480px;
+    z-index: 88888;
+  }
+}

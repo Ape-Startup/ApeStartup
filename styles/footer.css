@@ -1,0 +1,32 @@
+/* sessão geral */
+.footer {
+  background-color: var(--secundary-color);
+}
+
+/* Div do footer */
+.footerDiv {
+  width: 100%;
+  text-align: center;
+}
+
+/* conteúdo do footer */
+.footerDiv h3 {
+  font-weight: 500;
+  font-size: 12px;
+  padding: 20px;
+}
+
+/* responsividade */
+
+@media (min-width: 600px) {
+  .footerDiv h3 {
+    font-size: 15px;
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footerDiv h3 {
+    font-size: 17px;
+  }
+}

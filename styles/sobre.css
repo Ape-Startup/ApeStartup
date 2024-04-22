@@ -1,0 +1,207 @@
+/* geral sobre */
+.aboutUs {
+  margin-top: 60px;
+}
+
+/* sobre titulo*/
+.aboutUs h2 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 27px;
+  font-size: 30px;
+}
+
+/* conteudo do sobre grupo */
+.aboutDiv {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+}
+
+/* conteudo sobre:  texto */
+.textAbout {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* conteudo do sobre imagem */
+.imgAbout {
+  width: 218px;
+  height: 218px;
+}
+
+/* ============ cards de visão, missão e valores  ===================*/
+
+.cardsAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 100px;
+}
+
+.card {
+  width: 100%;
+  height: 35vh;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden; /*Esconde o verso do card*/
+}
+
+/* adição de back ground nos cards separadamente (visao front)*/
+.vision {
+  position: relative;
+  background-image: url(../assets/img/cardBg1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mission {
+  position: relative;
+  background-image: url(../assets/img/cardBg2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.values {
+  position: relative;
+  background-image: url(../assets/img/cardBg3.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* conteudo do card (visao front) */
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* titulo dos cards */
+.titleCard {
+  font-size: 40px;
+}
+
+/* incone de seta direita */
+.fa-arrow-right {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  font-size: 30px;
+  padding: 10px 10px 0px 0px;
+  color: white;
+}
+
+/* cards back */
+
+.cardVerso {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  top: 0;
+  background-color: #d8bef8;
+  border-radius: 5px;
+  height: 35vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* quando open volta para seu estado natural */
+.cardVerso.open {
+  transform: translate(0);
+}
+
+/* icone de seta esquerda */
+.fa-arrow-left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 0px 10px 10px;
+  font-size: 30px;
+}
+
+/* responsividade */
+
+@media (min-width: 552px) {
+  .card {
+    width: 60%;
+    height: 35vh;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 640px) {
+  .textAbout {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 787px) {
+  /* sobre titulo*/
+  .aboutUs h2 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 27px;
+    font-size: 35px;
+  }
+
+  /* conteudo do sobre grupo */
+  .aboutDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+  }
+
+  /* conteudo sobre:  texto */
+  .textAbout {
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  /* conteudo do sobre imagem */
+  .imgAbout {
+    width: 218px;
+    height: 218px;
+  }
+}
+
+@media (min-width: 890px) {
+  .cardsAbout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+  }
+
+  .card {
+    width: 30%;
+    height: 35vh;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* sobre titulo*/
+  .aboutUs h2 {
+    font-size: 40px;
+  }
+
+  .textAbout {
+    text-align: center;
+    font-size: 1.12rem;
+    padding: 40px;
+  }
+}

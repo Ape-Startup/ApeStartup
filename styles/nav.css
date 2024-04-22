@@ -1,0 +1,112 @@
+/* Esconde o menu da navbar por padrão */
+.navbar {
+  position: fixed;
+  background-color: #ae8fd4;
+  border-bottom-left-radius: 5px;
+  right: 0;
+  padding-right: 20px;
+  padding-top: 10px;
+  z-index: 9999;
+}
+
+.navbarGroup {
+  display: none;
+}
+
+/* Estilo para o ícone do menu hamburguer */
+.menuBtn {
+  display: fixed;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Estilo para o ícone do menu hamburguer */
+.fa-bars {
+  font-size: 24px;
+}
+
+/* Estilo para a lista de itens da navbar quando o menu hamburguer estiver ativo */
+.navbarGroup.active {
+  display: block;
+  background-color: #ae8fd4;
+}
+
+/* Estilo para a lista de itens da navbar */
+.navbarGroup li {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Estilo para os links da navbar */
+.navbarGroup li a {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Estilo para os links da navbar quando o mouse passa por cima */
+.navbarGroup li:hover {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+/* logo Ape da navegação */
+.logoNav {
+  display: none;
+}
+
+/* responsividade */
+
+@media (min-width: 795px) {
+  .navbar {
+    position: fixed;
+    background-color: var(--bg-home);
+    border-bottom-left-radius: 5px;
+    right: 0;
+    width: 100%;
+    height: min-content;
+    padding: 10px;
+  }
+
+  .navbarGroup {
+    margin-left: 150px;
+    display: flex; /* Alterado para flex */
+    justify-content: space-evenly; /* Adicionado para espaçar os itens */
+    flex-wrap: wrap; /* Adicionado para que os itens possam envolver */
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .logoNav {
+    display: block;
+    position: absolute;
+    width: 150px;
+    left: 0;
+    top: 0;
+  }
+
+  .navbarGroup li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbarGroup li a {
+    font-size: 1.1rem;
+  }
+
+  .navbarGroup {
+    margin-left: 150px;
+  }
+}
