@@ -9,8 +9,8 @@ A Apé é uma startup que busca desenvolver soluções inovadoras focada na rede
 Desenvolvimento de software
 
 ## Tamanho da empresa
-* 2-10 funcionários
-* 4 usuários associados Usuários do LinkedIn que listaram a Apé no perfil como local de trabalho atual.
+* 9 funcionários
+
 
 # Fundada em
 2023
