@@ -378,7 +378,9 @@
                 <h3>Que ótimo, você quer saber mais sobre o Apé</h3>
 
                 <div class="formDivGroup">
-                    <form class="form" action="" method="POST" >
+                    <form class="form" action="https://formsubmit.co/contato@apestartup.com" method="POST" ><!-- Esta tag indica o email que receberá as informções do formulário -->
+                        <input type="hidden" name="_captcha" value="false"><!-- Esta tag desabilita o captcha-->
+                        <input type="hidden" name="_next" value="https://ape-startup.netlify.app/#"><!-- Esta tag volta para o inicio, se quiser colocar uma tela de obrigado, apenas colocar o caminho depois da '/' -->
                         <div class="formDiv">
                             <label for="nome">Nome</label>
                             <input type="text" name="nome" id="nome" placeholder="seu nome" required>
