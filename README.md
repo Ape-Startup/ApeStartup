@@ -9,7 +9,7 @@ https://ape-startup.netlify.app
 Desenvolvimento de software
 
 ##  Tamanho da empresa
-9 funcionários
+10 funcionários
 
 ##  Ano de Fundação
 2023
