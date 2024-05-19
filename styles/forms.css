@@ -1,16 +1,16 @@
-/* sessão principal 3: formulário */
+/* sessão principal 3: formulário geral*/
 .mainContaner3 {
   background-color: var(--primary-color);
   padding: 0 50px;
 }
 
-/* geral do contato */
+/* geral da área de contato */
 .contactContent {
   margin-top: 40px;
   text-align: center;
 }
 
-/* título do contato */
+/* título da área de contato */
 .contactContent h2 {
   text-align: center;
   font-weight: 400;
@@ -18,7 +18,7 @@
   font-size: 30px;
 }
 
-/* subtitulo do contato */
+/* subtitulo da área de contato */
 .contactContent h3 {
   text-align: center;
   font-size: 18px;
